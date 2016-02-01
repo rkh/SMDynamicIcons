@@ -32,7 +32,7 @@
     
     CGContextRef context = UIGraphicsGetCurrentContext();
     
-    CGContextSetFillColorWithColor(context, backgroundColor);
+    CGContextSetFillColorWithColor(context, backgroundColor.CGColor);
     CGContextFillEllipseInRect(context, contextRect);
     
     CGRect group = [SMCheckMark getGroupRect:contextRect];

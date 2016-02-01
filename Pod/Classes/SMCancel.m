@@ -14,9 +14,9 @@ const CGFloat pathHighValue = 0.7000f;
 @implementation SMCancel
 
 + (UIImage *)cancel:(CGSize)size {
-    return [SMCancel checkmark:size
-               backgroundColor:[UIColor defaultCancelBackground]
-                   strokeColor:[UIColor defaultCancelStroke]];
+    return [SMCancel cancel:size
+            backgroundColor:[UIColor defaultCancelBackground]
+                strokeColor:[UIColor defaultCancelStroke]];
 }
 
 + (UIImage *)cancel:(CGSize)size
@@ -35,7 +35,7 @@ const CGFloat pathHighValue = 0.7000f;
     
     CGContextRef context = UIGraphicsGetCurrentContext();
     
-    CGContextSetFillColorWithColor(context, backgroundColor);
+    CGContextSetFillColorWithColor(context, backgroundColor.CGColor);
     CGContextFillEllipseInRect(context, contextRect);
     
     CGRect group = [SMCancel getGroupRect:contextRect];

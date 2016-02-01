@@ -533,14 +533,14 @@
 		2D88973D7C1F878028F847415895CAC4 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				37AD8285873D44EC0384912E8E2536EB /* UIColor+DefaultColors.h */,
-				4020D89A4C45C5B1872628BF71BF3B00 /* UIColor+DefaultColors.m */,
+				1461D59A1C5EE9E20019283C /* SMCancel.h */,
+				1461D59B1C5EE9E20019283C /* SMCancel.m */,
 				1461D58E1C5EE04C0019283C /* SMCheckMark.h */,
 				1461D58F1C5EE04C0019283C /* SMCheckMark.m */,
 				1461D5961C5EE7F80019283C /* SMDefaultIcon.h */,
 				1461D5971C5EE7F80019283C /* SMDefaultIcon.m */,
-				1461D59A1C5EE9E20019283C /* SMCancel.h */,
-				1461D59B1C5EE9E20019283C /* SMCancel.m */,
+				37AD8285873D44EC0384912E8E2536EB /* UIColor+DefaultColors.h */,
+				4020D89A4C45C5B1872628BF71BF3B00 /* UIColor+DefaultColors.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
