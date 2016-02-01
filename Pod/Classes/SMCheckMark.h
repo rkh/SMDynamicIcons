@@ -10,9 +10,9 @@
 
 @interface SMCheckMark : SMDefaultIcon
 
-+ (UIImage *)checkmark:(CGRect)frame;
++ (UIImage *)checkmark:(CGSize)size;
 
-+ (UIImage *)checkmark:(CGRect)frame
++ (UIImage *)checkmark:(CGSize)size
        backgroundColor:(UIColor *)backgroundColor
            strokeColor:(UIColor *)strokeColor;
 

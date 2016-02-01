@@ -13,24 +13,23 @@ const CGFloat pathHighValue = 0.7000f;
 
 @implementation SMCancel
 
-+ (UIImage *)cancel:(CGRect)frame {
-    return [SMCancel checkmark:frame
++ (UIImage *)cancel:(CGSize)size {
+    return [SMCancel checkmark:size
                backgroundColor:[UIColor defaultCancelBackground]
                    strokeColor:[UIColor defaultCancelStroke]];
 }
 
-+ (UIImage *)cancel:(CGRect)frame
++ (UIImage *)cancel:(CGSize)size
     backgroundColor:(UIColor *)backgroundColor
         strokeColor:(UIColor *)strokeColor {
-    return [SMCancel drawCancel:frame
+    return [SMCancel drawCancel:size
                 backgroundColor:backgroundColor
                     strokeColor:strokeColor];
 }
 
-+ (UIImage *)drawCancel:(CGRect)frame
++ (UIImage *)drawCancel:(CGSize)size
         backgroundColor:(UIColor *)backgroundColor
             strokeColor:(UIColor *)strokeColor {
-    CGSize size = CGSizeMake(frame.size.width, frame.size.height);
     CGRect contextRect = CGRectMake(0, 0, size.width, size.height);
     UIGraphicsBeginImageContext(size);
     

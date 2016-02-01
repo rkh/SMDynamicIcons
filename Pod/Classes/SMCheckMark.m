@@ -10,24 +10,23 @@
 
 @implementation SMCheckMark
 
-+ (UIImage *)checkmark:(CGRect)frame {
-    return [SMCheckMark checkmark:frame
++ (UIImage *)checkmark:(CGSize)size {
+    return [SMCheckMark checkmark:size
                   backgroundColor:[UIColor defaultCheckmarkBackground]
                       strokeColor:[UIColor defaultCheckmarkStroke]];
 }
 
-+ (UIImage *)checkmark:(CGRect)frame
++ (UIImage *)checkmark:(CGSize)size
        backgroundColor:(UIColor *)backgroundColor
            strokeColor:(UIColor *)strokeColor {
-    return [SMCheckMark drawCheckmark:frame
+    return [SMCheckMark drawCheckmark:size
                       backgroundColor:backgroundColor
                           strokeColor:strokeColor];
 }
 
-+ (UIImage *)drawCheckmark:(CGRect)frame
++ (UIImage *)drawCheckmark:(CGSize)size
            backgroundColor:(UIColor *)backgroundColor
                strokeColor:(UIColor *)strokeColor {
-    CGSize size = CGSizeMake(frame.size.width, frame.size.height);
     CGRect contextRect = CGRectMake(0, 0, size.width, size.height);
     UIGraphicsBeginImageContext(size);
     
