@@ -8,8 +8,8 @@
 
 #import "SMMinus.h"
 
-static const CGFloat SMPathLowValue = 0.3000f;
-static const CGFloat SMPathHighValue = 0.7000f;
+static const CGFloat SMPathLowValue = 0.2000f;
+static const CGFloat SMPathHighValue = 0.8000f;
 
 @implementation SMMinus
 
@@ -22,6 +22,14 @@ static const CGFloat SMPathHighValue = 0.7000f;
 + (UIImage *)minus:(CGSize)size
    backgroundColor:(UIColor *)backgroundColor
        strokeColor:(UIColor *)strokeColor {
+    NSAssert(CGSizeEqualToSize(size, CGSizeZero), @"Must provide a valid size");
+    if (!backgroundColor) {
+        backgroundColor = [UIColor defaultMinusBackground];
+    }
+    if (!strokeColor) {
+        strokeColor = [UIColor defaultMinusStroke];
+    }
+    
     return [SMMinus drawMinus:size
               backgroundColor:backgroundColor
                   strokeColor:strokeColor];
@@ -40,8 +48,6 @@ static const CGFloat SMPathHighValue = 0.7000f;
     UIBezierPath *bezierPath = [UIBezierPath bezierPath];
     [bezierPath moveToPoint: CGPointMake(CGRectGetMinX(group) + SMPathLowValue * CGRectGetWidth(group), CGRectGetMidY(group))];
     [bezierPath addLineToPoint: CGPointMake(CGRectGetMinX(group) + SMPathHighValue * CGRectGetWidth(group), CGRectGetMidY(group))];
-    [bezierPath moveToPoint: CGPointMake(CGRectGetMinX(group) + SMPathLowValue * CGRectGetWidth(group), CGRectGetMinY(group) + SMPathLowValue * CGRectGetHeight(group))];
-    [bezierPath addLineToPoint: CGPointMake(CGRectGetMinX(group) + SMPathHighValue * CGRectGetWidth(group), CGRectGetMinY(group) + SMPathHighValue * CGRectGetHeight(group))];
     
     bezierPath.lineCapStyle = kCGLineCapRound;
     

@@ -14,5 +14,9 @@
 + (UIColor *)defaultCancelStroke;
 + (UIColor *)defaultCheckmarkBackground;
 + (UIColor *)defaultCheckmarkStroke;
++ (UIColor *)defaultPlusBackground;
++ (UIColor *)defaultPlusStroke;
++ (UIColor *)defaultMinusBackground;
++ (UIColor *)defaultMinusStroke;
 
 @end

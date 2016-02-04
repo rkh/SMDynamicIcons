@@ -30,8 +30,13 @@
 }
 
 - (UIImage *)defaultCheckmarkImage {
-    return [SMCheckMark checkmark:CGSizeMake(self.defaultCheckmarkImageView.frame.size.width,
-                                             self.defaultCheckmarkImageView.frame.size.height)];
+    return [SMPlus plus:[self imageSize]];
+    //return [SMCheckMark checkmark:];
+}
+
+- (CGSize)imageSize {
+    return CGSizeMake(self.defaultCheckmarkImageView.frame.size.width,
+                      self.defaultCheckmarkImageView.frame.size.height);
 }
 
 @end
