@@ -13,4 +13,11 @@ static const CGFloat SMStrokeWidth = 0.15f;
 
 @interface SMDefaultIcon : NSObject
 
+/**
+ *  Prevents user from creating an object based on this class
+ *
+ *  @return nil
+ */
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
