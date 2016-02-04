@@ -27,16 +27,13 @@
 + (UIImage *)drawCheckmark:(CGSize)size
            backgroundColor:(UIColor *)backgroundColor
                strokeColor:(UIColor *)strokeColor {
-    CGRect contextRect = CGRectMake(0, 0, size.width, size.height);
+    CGRect group = CGRectMake(0, 0, size.width, size.height);
     UIGraphicsBeginImageContext(size);
-    
     CGContextRef context = UIGraphicsGetCurrentContext();
     
     CGContextSetFillColorWithColor(context, backgroundColor.CGColor);
-    CGContextFillEllipseInRect(context, contextRect);
-    
-    CGRect group = [SMCheckMark getGroupRect:contextRect];
-    
+    CGContextFillEllipseInRect(context, group);
+
     UIBezierPath *bezierPath = [UIBezierPath bezierPath];
     [bezierPath moveToPoint: CGPointMake(CGRectGetMinX(group) + 0.250 * CGRectGetWidth(group), CGRectGetMinY(group) + 0.55 * CGRectGetHeight(group))];
     [bezierPath addLineToPoint: CGPointMake(CGRectGetMinX(group) + 0.4 * CGRectGetWidth(group), CGRectGetMinY(group) + 0.68 * CGRectGetHeight(group))];

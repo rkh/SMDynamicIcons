@@ -11,7 +11,7 @@
 @implementation UIColor (DefaultColors)
 
 + (UIColor *)defaultCancelBackground {
-    return [UIColor colorWithRed: 56.0f/255.0f green: 146.0f/255.0f blue: 46.0f/255.0f alpha: 1.0f];
+    return [UIColor colorWithRed: 178.0f/255.0f green: 34.0f/255.0f blue: 34.0f/255.0f alpha: 1.0f];
 }
 
 + (UIColor *)defaultCancelStroke {
@@ -19,7 +19,7 @@
 }
 
 + (UIColor *)defaultCheckmarkBackground {
-    return [UIColor colorWithRed: 178.0f/255.0f green: 34.0f/255.0f blue: 34.0f/255.0f alpha: 1.0f];
+    return [UIColor colorWithRed: 56.0f/255.0f green: 146.0f/255.0f blue: 46.0f/255.0f alpha: 1.0f];
 }
 
 + (UIColor *)defaultCheckmarkStroke {

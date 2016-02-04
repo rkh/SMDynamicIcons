@@ -13,13 +13,4 @@ static const CGFloat SMStrokeWidth = 0.15f;
 
 @interface SMDefaultIcon : NSObject
 
-/**
- *  Provides CGRect used to defined field for strokes
- *
- *  @param frame CGRect that defines stroke field
- *
- *  @return CGRect that bounds strokes
- */
-+ (CGRect)getGroupRect:(CGRect)frame;
-
 @end

@@ -12,6 +12,8 @@
 
 @interface SMViewController ()
 
+@property (weak, nonatomic) IBOutlet UIImageView *defaultCheckmarkImageView;
+
 @end
 
 @implementation SMViewController
@@ -19,13 +21,17 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self drawDefaultCheckmark];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)drawDefaultCheckmark {
+    self.defaultCheckmarkImageView.image = [self defaultCheckmarkImage];
+}
+
+- (UIImage *)defaultCheckmarkImage {
+    return [SMCheckMark checkmark:CGSizeMake(self.defaultCheckmarkImageView.frame.size.width,
+                                             self.defaultCheckmarkImageView.frame.size.height)];
 }
 
 @end

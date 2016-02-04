@@ -30,16 +30,13 @@ const CGFloat pathHighValue = 0.7000f;
 + (UIImage *)drawCancel:(CGSize)size
         backgroundColor:(UIColor *)backgroundColor
             strokeColor:(UIColor *)strokeColor {
-    CGRect contextRect = CGRectMake(0, 0, size.width, size.height);
+    CGRect group = CGRectMake(0, 0, size.width, size.height);
     UIGraphicsBeginImageContext(size);
-    
     CGContextRef context = UIGraphicsGetCurrentContext();
     
     CGContextSetFillColorWithColor(context, backgroundColor.CGColor);
-    CGContextFillEllipseInRect(context, contextRect);
-    
-    CGRect group = [SMCancel getGroupRect:contextRect];
-    
+    CGContextFillEllipseInRect(context, group);
+
     UIBezierPath *bezierPath = [UIBezierPath bezierPath];
     [bezierPath moveToPoint: CGPointMake(CGRectGetMinX(group) + pathLowValue * CGRectGetWidth(group), CGRectGetMinY(group) + pathHighValue * CGRectGetHeight(group))];
     [bezierPath addLineToPoint: CGPointMake(CGRectGetMinX(group) + pathHighValue * CGRectGetWidth(group), CGRectGetMinY(group) + pathLowValue * CGRectGetHeight(group))];
