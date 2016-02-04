@@ -8,6 +8,7 @@
 
 #import "SMViewController.h"
 
+@import SMDynamicIcons;
 
 @interface SMViewController ()
 

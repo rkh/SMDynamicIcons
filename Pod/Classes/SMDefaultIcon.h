@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "UIColor+DefaultColors.h"
 
-const CGFloat SMStrokeWidth = 0.15f;
+static const CGFloat SMStrokeWidth = 0.15f;
 
 @interface SMDefaultIcon : NSObject
 

@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '96F0AAE4F418B98EA4903A58'
+               BlueprintIdentifier = 'B17A082BB56DCCD39C982C33'
                BlueprintName = 'SMDynamicIcons'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'SMDynamicIcons.framework'>

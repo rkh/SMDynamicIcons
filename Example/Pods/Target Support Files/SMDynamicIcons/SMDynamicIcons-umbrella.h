@@ -1,8 +1,8 @@
 #import <UIKit/UIKit.h>
 
-#import "SMCancelView.h"
-#import "SMCheckMarkView.h"
-#import "SMDefaultView.h"
+#import "SMCancel.h"
+#import "SMCheckMark.h"
+#import "SMDefaultIcon.h"
 #import "UIColor+DefaultColors.h"
 
 FOUNDATION_EXPORT double SMDynamicIconsVersionNumber;
