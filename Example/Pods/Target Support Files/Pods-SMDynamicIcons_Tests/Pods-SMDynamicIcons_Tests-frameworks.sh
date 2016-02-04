@@ -84,16 +84,16 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "Pods-SMDynamicIcons_Tests/SMDynamicIcons.framework"
   install_framework "Pods-SMDynamicIcons_Tests/Expecta.framework"
   install_framework "Pods-SMDynamicIcons_Tests/Expecta_Snapshots.framework"
   install_framework "Pods-SMDynamicIcons_Tests/FBSnapshotTestCase.framework"
+  install_framework "Pods-SMDynamicIcons_Tests/SMDynamicIcons.framework"
   install_framework "Pods-SMDynamicIcons_Tests/Specta.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "Pods-SMDynamicIcons_Tests/SMDynamicIcons.framework"
   install_framework "Pods-SMDynamicIcons_Tests/Expecta.framework"
   install_framework "Pods-SMDynamicIcons_Tests/Expecta_Snapshots.framework"
   install_framework "Pods-SMDynamicIcons_Tests/FBSnapshotTestCase.framework"
+  install_framework "Pods-SMDynamicIcons_Tests/SMDynamicIcons.framework"
   install_framework "Pods-SMDynamicIcons_Tests/Specta.framework"
 fi

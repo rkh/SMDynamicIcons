@@ -3,6 +3,7 @@
 #import "SMCancel.h"
 #import "SMCheckMark.h"
 #import "SMDefaultIcon.h"
+#import "SMPlus.h"
 #import "UIColor+DefaultColors.h"
 
 FOUNDATION_EXPORT double SMDynamicIconsVersionNumber;

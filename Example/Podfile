@@ -2,7 +2,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 use_frameworks!
 
 target 'SMDynamicIcons_Example', :exclusive => true do
-  pod 'SMDynamicIcons', :path => '../'
+    pod 'SMDynamicIcons', :path => '../'
 end
 
 target 'SMDynamicIcons_Tests', :exclusive => true do

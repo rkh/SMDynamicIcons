@@ -8,6 +8,13 @@
 
 #import "SMCheckMark.h"
 
+static const CGFloat SMPathInitialX = 0.250f;
+static const CGFloat SMPathInitialY = 0.550f;
+static const CGFloat SMPathMidpointX = 0.400f;
+static const CGFloat SMPathMidpointY = 0.680f;
+static const CGFloat SMPathEndpointX = 0.750f;
+static const CGFloat SMPathEndpointY = 0.300f;
+
 @implementation SMCheckMark
 
 + (UIImage *)checkmark:(CGSize)size {
@@ -35,9 +42,9 @@
     CGContextFillEllipseInRect(context, group);
 
     UIBezierPath *bezierPath = [UIBezierPath bezierPath];
-    [bezierPath moveToPoint: CGPointMake(CGRectGetMinX(group) + 0.250 * CGRectGetWidth(group), CGRectGetMinY(group) + 0.55 * CGRectGetHeight(group))];
-    [bezierPath addLineToPoint: CGPointMake(CGRectGetMinX(group) + 0.4 * CGRectGetWidth(group), CGRectGetMinY(group) + 0.68 * CGRectGetHeight(group))];
-    [bezierPath addLineToPoint: CGPointMake(CGRectGetMinX(group) + 0.75000 * CGRectGetWidth(group), CGRectGetMinY(group) + 0.3 * CGRectGetHeight(group))];
+    [bezierPath moveToPoint: CGPointMake(CGRectGetMinX(group) + SMPathInitialX * CGRectGetWidth(group), CGRectGetMinY(group) + SMPathInitialY * CGRectGetHeight(group))];
+    [bezierPath addLineToPoint: CGPointMake(CGRectGetMinX(group) + SMPathMidpointX * CGRectGetWidth(group), CGRectGetMinY(group) + SMPathMidpointY * CGRectGetHeight(group))];
+    [bezierPath addLineToPoint: CGPointMake(CGRectGetMinX(group) + SMPathEndpointX * CGRectGetWidth(group), CGRectGetMinY(group) + SMPathEndpointY * CGRectGetHeight(group))];
     bezierPath.lineCapStyle = kCGLineCapSquare;
     
     [strokeColor setStroke];
