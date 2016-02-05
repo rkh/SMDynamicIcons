@@ -22,7 +22,7 @@ static const CGFloat SMPathHighValue = 0.7000f;
 + (UIImage *)cancel:(CGSize)size
     backgroundColor:(UIColor *)backgroundColor
         strokeColor:(UIColor *)strokeColor {
-    NSAssert(CGSizeEqualToSize(size, CGSizeZero), @"Must provide a valid size");
+    NSAssert(!CGSizeEqualToSize(size, CGSizeZero), @"Must provide a valid size");
     if (!backgroundColor) {
         backgroundColor = [UIColor defaultCancelBackground];
     }

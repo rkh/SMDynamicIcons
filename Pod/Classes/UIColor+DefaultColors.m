@@ -27,7 +27,7 @@
 }
 
 + (UIColor *)defaultPlusBackground {
-    return [UIColor colorWithRed: 0.0f/255.0f green: 59.0f/255.0f blue: 11.0f/255.0f alpha: 1.0f];
+    return [UIColor colorWithRed: 93.0f/255.0f green: 127.0f/255.0f blue: 249.0f/255.0f alpha: 1.0f];
 }
 
 + (UIColor *)defaultPlusStroke {

@@ -8,26 +8,26 @@
 
 #import "SMPlus.h"
 
-static const CGFloat SMPathLowValue = 0.3000f;
-static const CGFloat SMPathHighValue = 0.7000f;
+static const CGFloat SMPathLowValue = 0.2000f;
+static const CGFloat SMPathHighValue = 0.8000f;
 
 @implementation SMPlus
 
 + (UIImage *)plus:(CGSize)size {
     return [SMPlus plus:size
-        backgroundColor:[UIColor defaultCancelBackground]
-            strokeColor:[UIColor defaultCancelStroke]];
+        backgroundColor:[UIColor defaultPlusBackground]
+            strokeColor:[UIColor defaultPlusStroke]];
 }
 
 + (UIImage *)plus:(CGSize)size
   backgroundColor:(UIColor *)backgroundColor
       strokeColor:(UIColor *)strokeColor {
-    NSAssert(CGSizeEqualToSize(size, CGSizeZero), @"Must provide a valid size");
+    NSAssert(!CGSizeEqualToSize(size, CGSizeZero), @"Must provide a valid size");
     if (!backgroundColor) {
-        backgroundColor = [UIColor defaultCancelBackground];
+        backgroundColor = [UIColor defaultPlusBackground];
     }
     if (!strokeColor) {
-        strokeColor = [UIColor defaultCancelStroke];
+        strokeColor = [UIColor defaultPlusStroke];
     }
     
     return [SMPlus drawPlus:size
@@ -48,8 +48,8 @@ static const CGFloat SMPathHighValue = 0.7000f;
     UIBezierPath *bezierPath = [UIBezierPath bezierPath];
     [bezierPath moveToPoint: CGPointMake(CGRectGetMinX(group) + SMPathLowValue * CGRectGetWidth(group), CGRectGetMidY(group))];
     [bezierPath addLineToPoint: CGPointMake(CGRectGetMinX(group) + SMPathHighValue * CGRectGetWidth(group), CGRectGetMidY(group))];
-    [bezierPath moveToPoint: CGPointMake(CGRectGetMinX(group) + SMPathLowValue * CGRectGetWidth(group), CGRectGetMinY(group) + SMPathLowValue * CGRectGetHeight(group))];
-    [bezierPath addLineToPoint: CGPointMake(CGRectGetMinX(group) + SMPathHighValue * CGRectGetWidth(group), CGRectGetMinY(group) + SMPathHighValue * CGRectGetHeight(group))];
+    [bezierPath moveToPoint: CGPointMake(CGRectGetMidX(group), CGRectGetMinY(group) + SMPathLowValue * CGRectGetHeight(group))];
+    [bezierPath addLineToPoint: CGPointMake(CGRectGetMidX(group), CGRectGetMinY(group) + SMPathHighValue * CGRectGetHeight(group))];
     
     bezierPath.lineCapStyle = kCGLineCapRound;
     

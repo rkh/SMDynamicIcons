@@ -26,7 +26,7 @@ static const CGFloat SMPathEndpointY = 0.300f;
 + (UIImage *)checkmark:(CGSize)size
        backgroundColor:(UIColor *)backgroundColor
            strokeColor:(UIColor *)strokeColor {
-    NSAssert(CGSizeEqualToSize(size, CGSizeZero), @"Must provide a valid size");
+    NSAssert(!CGSizeEqualToSize(size, CGSizeZero), @"Must provide a valid size");
     if (!backgroundColor) {
         backgroundColor = [UIColor defaultCheckmarkBackground];
     }

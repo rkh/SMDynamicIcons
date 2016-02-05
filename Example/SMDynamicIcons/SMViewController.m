@@ -31,7 +31,6 @@
 
 - (UIImage *)defaultCheckmarkImage {
     return [SMPlus plus:[self imageSize]];
-    //return [SMCheckMark checkmark:];
 }
 
 - (CGSize)imageSize {
