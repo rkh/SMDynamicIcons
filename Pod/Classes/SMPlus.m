@@ -14,6 +14,8 @@ static const CGFloat SMPathHighValue = 0.8000f;
 @implementation SMPlus
 
 + (UIImage *)plus:(CGSize)size {
+    [super checkSize:size];
+    
     return [SMPlus plus:size
         backgroundColor:[UIColor defaultPlusBackground]
             strokeColor:[UIColor defaultPlusStroke]];
@@ -22,7 +24,8 @@ static const CGFloat SMPathHighValue = 0.8000f;
 + (UIImage *)plus:(CGSize)size
   backgroundColor:(UIColor *)backgroundColor
       strokeColor:(UIColor *)strokeColor {
-    NSAssert(!CGSizeEqualToSize(size, CGSizeZero), @"Must provide a valid size");
+    [super checkSize:size];
+    
     if (!backgroundColor) {
         backgroundColor = [UIColor defaultPlusBackground];
     }

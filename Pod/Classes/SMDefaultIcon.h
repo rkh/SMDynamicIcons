@@ -20,4 +20,6 @@ static const CGFloat SMStrokeWidth = 0.15f;
  */
 - (instancetype)init NS_UNAVAILABLE;
 
++ (void)checkSize:(CGSize)size;
+
 @end

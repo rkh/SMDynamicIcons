@@ -10,4 +10,8 @@
 
 @implementation SMDefaultIcon
 
++ (void)checkSize:(CGSize)size {
+    NSAssert(!CGSizeEqualToSize(size, CGSizeZero), @"Must provide a valid size");
+}
+
 @end
