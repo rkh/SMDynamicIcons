@@ -24,7 +24,7 @@ Provides dynamically generated icons that can scale to any size no matter what d
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Sean McNeil" => "mcneilsean@icloud.com" }
-  s.source           = { :git => "https://github.com/seanmcneil/SMDynamicIcons/", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/seanmcneil/SMDynamicIcons.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/sean_mcneil>'
 
   s.platform     = :ios, '8.1'
