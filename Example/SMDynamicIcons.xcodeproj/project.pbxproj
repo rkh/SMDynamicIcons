@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14E2AC2E1C71BA590088F016 /* SMExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E2AC2B1C71BA590088F016 /* SMExampleViewController.m */; };
+		14E2AC2F1C71BA590088F016 /* SMExampleMenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E2AC2D1C71BA590088F016 /* SMExampleMenuTableViewController.m */; };
+		14E2AC311C71BA710088F016 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14E2AC301C71BA710088F016 /* Main.storyboard */; };
 		1F163A383BD3AFB8B1410259 /* Pods_SMDynamicIcons_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C02AADC255E38D3C12223ECB /* Pods_SMDynamicIcons_Tests.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
@@ -14,14 +17,12 @@
 		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
 		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
 		6003F59E195388D20070C39A /* SMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* SMAppDelegate.m */; };
-		6003F5A7195388D20070C39A /* SMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* SMViewController.m */; };
 		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
 		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
-		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		B2E68412AB317DAAA7B5870B /* Pods_SMDynamicIcons_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA500F2C81B0BDCABA253101 /* Pods_SMDynamicIcons_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +38,11 @@
 
 /* Begin PBXFileReference section */
 		0E5CA36884E2E9A7477D9B57 /* Pods-SMDynamicIcons_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SMDynamicIcons_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SMDynamicIcons_Tests/Pods-SMDynamicIcons_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		14E2AC2A1C71BA590088F016 /* SMExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMExampleViewController.h; sourceTree = "<group>"; };
+		14E2AC2B1C71BA590088F016 /* SMExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMExampleViewController.m; sourceTree = "<group>"; };
+		14E2AC2C1C71BA590088F016 /* SMExampleMenuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMExampleMenuTableViewController.h; sourceTree = "<group>"; };
+		14E2AC2D1C71BA590088F016 /* SMExampleMenuTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMExampleMenuTableViewController.m; sourceTree = "<group>"; };
+		14E2AC301C71BA710088F016 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		38B1540C40B52D4E212AB1AA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		4911FE9124FF72C143A1228D /* Pods-SMDynamicIcons_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SMDynamicIcons_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-SMDynamicIcons_Example/Pods-SMDynamicIcons_Example.release.xcconfig"; sourceTree = "<group>"; };
 		5A6890B793E8A5CB0F8697F0 /* Pods-SMDynamicIcons_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SMDynamicIcons_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SMDynamicIcons_Example/Pods-SMDynamicIcons_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -50,8 +56,6 @@
 		6003F59B195388D20070C39A /* SMDynamicIcons-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SMDynamicIcons-Prefix.pch"; sourceTree = "<group>"; };
 		6003F59C195388D20070C39A /* SMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMAppDelegate.h; sourceTree = "<group>"; };
 		6003F59D195388D20070C39A /* SMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMAppDelegate.m; sourceTree = "<group>"; };
-		6003F5A5195388D20070C39A /* SMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMViewController.h; sourceTree = "<group>"; };
-		6003F5A6195388D20070C39A /* SMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMViewController.m; sourceTree = "<group>"; };
 		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6003F5AE195388D20070C39A /* SMDynamicIcons_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SMDynamicIcons_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -59,7 +63,6 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		B840D65FD7F3E7564E73A5D7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		C02AADC255E38D3C12223ECB /* Pods_SMDynamicIcons_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SMDynamicIcons_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6734A5CC5A578D5C14E3255 /* Pods-SMDynamicIcons_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SMDynamicIcons_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SMDynamicIcons_Tests/Pods-SMDynamicIcons_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -132,9 +135,11 @@
 			children = (
 				6003F59C195388D20070C39A /* SMAppDelegate.h */,
 				6003F59D195388D20070C39A /* SMAppDelegate.m */,
-				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
-				6003F5A5195388D20070C39A /* SMViewController.h */,
-				6003F5A6195388D20070C39A /* SMViewController.m */,
+				14E2AC301C71BA710088F016 /* Main.storyboard */,
+				14E2AC2A1C71BA590088F016 /* SMExampleViewController.h */,
+				14E2AC2B1C71BA590088F016 /* SMExampleViewController.m */,
+				14E2AC2C1C71BA590088F016 /* SMExampleMenuTableViewController.h */,
+				14E2AC2D1C71BA590088F016 /* SMExampleMenuTableViewController.m */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
@@ -276,7 +281,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
+				14E2AC311C71BA710088F016 /* Main.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
@@ -391,8 +396,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* SMAppDelegate.m in Sources */,
-				6003F5A7195388D20070C39A /* SMViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				14E2AC2E1C71BA590088F016 /* SMExampleViewController.m in Sources */,
+				14E2AC2F1C71BA590088F016 /* SMExampleMenuTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,7 +473,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -500,7 +506,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -516,6 +522,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SMDynamicIcons/SMDynamicIcons-Prefix.pch";
 				INFOPLIST_FILE = "SMDynamicIcons/SMDynamicIcons-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -532,6 +539,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SMDynamicIcons/SMDynamicIcons-Prefix.pch";
 				INFOPLIST_FILE = "SMDynamicIcons/SMDynamicIcons-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";

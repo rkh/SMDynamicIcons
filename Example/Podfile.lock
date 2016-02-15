@@ -1,0 +1,14 @@
+PODS:
+  - SMDynamicIcons (0.2.0)
+
+DEPENDENCIES:
+  - SMDynamicIcons (from `../`)
+
+EXTERNAL SOURCES:
+  SMDynamicIcons:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SMDynamicIcons: 0705f588af0e6f7b6115a6d4b20f34650d4bc17d
+
+COCOAPODS: 0.39.0

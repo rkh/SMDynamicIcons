@@ -8,25 +8,26 @@
 
 Pod::Spec.new do |s|
   s.name             = "SMDynamicIcons"
-  s.version          = "0.1.0"
-  s.summary          = "A short description of SMDynamicIcons."
+  s.version          = "0.3.0"
+  s.summary          = "Generate common icons that fit on any device."
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
 #   * Try to keep it short, snappy and to the point.
 #   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!  
-  s.description      = <<-DESC
-                       DESC
+#   * Finally, don't worry about the indent, CocoaPods strips it!
+s.description      = <<-DESC
+Provides dynamically generated icons that can scale to any size no matter what device or screen resolution they are on. Also, provides ability to use custom colors to suit your needs.
+DESC
 
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/SMDynamicIcons"
+  s.homepage         = "https://github.com/seanmcneil/SMDynamicIcons"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
-  s.author           = { "Sean McNeil" => "sean@seanmcneil.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/SMDynamicIcons.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { "Sean McNeil" => "mcneilsean@icloud.com" }
+  s.source           = { :git => "https://github.com/seanmcneil/SMDynamicIcons.git", :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/sean_mcneil'
 
-  s.platform     = :ios, '7.0'
+  s.platform     = :ios, '8.1'
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes/**/*'
@@ -34,7 +35,4 @@ Pod::Spec.new do |s|
     'SMDynamicIcons' => ['Pod/Assets/*.png']
   }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
